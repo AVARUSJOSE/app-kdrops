@@ -1,0 +1,1016 @@
+:root{
+  --clr-background: #ffffff;
+  --clr-font: #F8F8F8;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--clr-background);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+
+.nav__container{
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #021142;
+  /*border: 1px solid black;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+  z-index: 10;
+}
+.nav__container .nav{
+  width: 100%;
+  align-items: center;
+  justify-content: right;
+}
+
+.nav__container .checkbtn{
+  position: absolute;
+  font-size: 35px;
+  color: white;
+  float: right; 
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.nav__container .nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.nav__container .nav ul a{
+  text-decoration: none;  
+}
+
+.nav__container .nav ul li{
+  margin-left: 20px;
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
+  color: var(--clr-font);
+}
+
+.nav__container .nav ul li ion-icon{
+  color: var(--clr-font);
+}
+
+
+/*========================carrusel================================*/
+
+.container__carrusel{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*========================main-products================================*/
+
+.main__kdrops{
+  width: 100%;
+  height: auto;
+  background-color: var(--clr-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main__kdrops .pro__description:nth-child(1){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color:#02175a;
+  color: white;
+  padding: 20px;
+  
+}
+
+
+
+.main__kdrops .pro__description:nth-child(2){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color:#1d4ef0;
+  color: white;
+  padding: 20px;
+  
+}
+
+
+
+.main__kdrops .pro__description:nth-child(3){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color:#7c09be;
+  color: white;
+  padding: 20px;
+  
+}
+
+
+
+.main__kdrops .pro__description:nth-child(4){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color:#df6616;
+  color: white;
+  padding: 20px;
+  
+}
+
+
+
+.main__kdrops .pro__description:nth-child(5){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color: #04a542;
+  color: white;
+  padding: 20px;
+  
+}
+
+
+
+.main__kdrops .pro__description:nth-child(6){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color: #df0505;
+  color: white;
+  padding: 20px;
+  
+}
+
+
+.main__kdrops a{
+  text-decoration: none;
+}
+
+.main__kdrops .pro__description h3{
+  font-style: italic;
+  text-align: center;
+}
+
+.main__kdrops .pro__description p{
+  font-size: 14px;
+  text-align: center;
+}
+
+.main__kdrops .pro__description button{
+  width: 100px;
+  height: auto;
+  font-size: 15px;
+  border-radius: 10px;
+  color: black;
+  border: unset;
+  font-size: 14px;
+}
+
+/*=========input verificador========*/
+
+.container_product{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  height: 500px;
+  background-color: #021142;
+}
+
+.container_product h1{
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 70px; 
+  font-weight: bolder;
+}
+
+.container_product .input{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: auto;
+gap: 1rem;
+}
+
+.container_product .input h2{
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px; 
+  font-weight: bold;
+}
+
+.container_product .input label{
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px; 
+  font-weight: bold;
+}
+
+/*======================animacion en input====================*/
+
+.rotating-text-wrapper {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.rotating-text-wrapper h2 {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0.3em;
+  color: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  border-radius: 18px;
+}
+
+.rotating-text-wrapper h2:nth-child(1) {
+  background-color: lightseagreen;
+  animation-name: rotating-text-1;
+}
+
+@keyframes rotating-text-1 {
+  0% {
+    transform: translateY(200%);
+  }
+  33% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+}
+.rotating-text-wrapper h2:nth-child(2) {
+  background-color: tomato;
+  animation-name: rotating-text-2;
+}
+@keyframes rotating-text-2 {
+  33% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  66% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+}
+.rotating-text-wrapper h2:nth-child(3) {
+  background-color: cornflowerblue;
+  animation-name: rotating-text-3;
+}
+@keyframes rotating-text-3 {
+  66% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  99% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .rotating-text-wrapper {
+    font-size: 0.7rem;
+  }
+}
+
+
+/*======================produtos mas descripción====================*/
+
+.productos_mas_descripcion{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-direction: row;
+  padding: 20px;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+
+.productos_mas_descripcion .foto_producto{
+  
+  width: 650px;
+  height: 700px;
+  
+}
+.productos_mas_descripcion .foto_producto img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, .5);
+}
+
+.productos_mas_descripcion .descipcion_producto{
+  width: 500px;
+  height: 700px;
+  padding: 20px;
+}
+
+.productos_mas_descripcion .descipcion_producto h1{
+  font-style: italic;
+  color: #2596be;
+  font-weight: 700;
+  text-align: center;
+}
+
+.productos_mas_descripcion .descipcion_producto p{
+  font-size: 14px;
+  text-align: justify;
+  font-family: "Raleway", sans-serif ;
+  font-weight: 500;
+  color: gray;
+}
+
+.productos_mas_descripcion .descipcion_producto button{
+  background-color: #2596be;
+  border-radius: 20px;
+  border: unset;
+  font-size: 14px;
+  width: 150px;
+  padding: 5px;
+  color: white;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, .5);
+  transition: .5s;
+}
+
+.productos_mas_descripcion .descipcion_producto button:hover{
+  background-color: var(--clr-background);
+  color: #2596be;
+}
+
+
+.especificaciones{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*gap: 1rem;*/
+  flex-direction: row;
+  padding: 3px;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.especificaciones .espe{
+  width: 600px;
+  height: 600px;
+  padding: 30px;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.especificaciones .espe h5{
+  font-style: italic;
+  font-weight: 900;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.especificaciones .espe p{
+  font-weight: 400;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.especificaciones .espe:first-child{
+  border-top: 2px solid #2596be;
+  border-bottom: 2px solid #2596be;
+  border-left: 2px solid #2596be;
+  border-radius: 20px 0 0 20px;
+  background-color: #2596be;
+  color: white;
+  font-size: 16px;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.especificaciones .espe:last-child{
+  border-top: 2px solid #2596be;
+  border-bottom: 2px solid #2596be;
+  border-left: 2px solid #2596be;
+  border-radius: 0 20px 20px 0;
+  background-color: white;
+  color: #2596be;
+  font-size: 16px;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+
+.title_test_nos{
+  width: 100%;
+  height: 200px;
+  background-color: #2596be;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.title_test_nos .titles{
+  width: 100%;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.title_test_nos .titles h1{
+  color: white;
+  font-style: italic;
+  text-align: center;
+  font-size: 50px;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+
+.container_carrusel_about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.container_carrusel_about .quienes_somos_cont{
+  width: 100%;
+  border-top: 1px solid #2596be; 
+  border-right: 1px solid #2596be;
+  border-bottom: 1px solid #2596be;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.container_carrusel_about .quienes_somos_cont .content{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.container_carrusel_about .quienes_somos_cont .content h3{
+  font-style: italic;
+  color: #2596be;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+
+.container_carrusel_about .quienes_somos_cont .content p{
+  font-size: 18px;
+  padding: 0 50px;
+  color: gray;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+
+.container_carrusel_about .carrusel_testimonios{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #2596be; 
+  /*border-left: 1px solid #2596be;*/
+  border-bottom: 1px solid #2596be;
+  border-radius: 10px;
+}
+
+.container_carrusel_about .carrusel_testimonios .carousel{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.container_carrusel_about .carrusel_testimonios .slide{
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_carrusel_about .carrusel_testimonios .carousel .carousel-item img{
+  width: 100%;
+  height: 500px;
+}
+
+.preguntas_frecuentes{
+  width: 100%;
+  height: auto;
+}
+
+.preguntas_frecuentes .accordion .accordion-item .accordion-header button{
+  color: #2596be;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.preguntas_frecuentes .accordion .accordion-item .accordion-collapse .accordion-body{
+  color: gray;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.preguntas_frecuentes .title_preguntas{
+  background: #2596be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  animation: show;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.preguntas_frecuentes .title_preguntas h1{
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+}
+
+
+.contactanos{
+  width: 100%;
+  padding: 30px;
+  height: 400px;
+  background-image: url('/assets/fondo-para-form.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contactanos h2{
+  color: white;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.contactanos label{
+  font-style: italic;
+  font-family: "Raleway", sans-serif ;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 500;
+}
+
+.contactanos textarea{
+  width: 250px;
+  color: #2596be;
+  border: unset;
+  padding: 5px;
+}
+
+.contactanos input{
+  background-color: #2596be;
+  border-radius: 20px;
+  border: unset;
+  font-size: 14px;
+  width: 150px;
+  padding: 5px;
+  color: white;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, .5);
+  transition: .5s;
+}
+
+.contactanos input:hover{
+  background-color: var(--clr-background);
+  color: #2596be;
+}
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2596be;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+footer{
+  background-color: #021142;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  padding: 10px 30px;
+}
+
+footer div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+footer div h6{
+  color: white;
+  font-family: "Raleway", sans-serif ;
+  font-style: italic;
+}
+
+footer div a{
+  margin-left: 20px;
+  font-size: 40px;
+  font-style: none;
+  color: white;
+}
+
+
+
+  @keyframes show{
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+    
+  }
+
+
+/*==========media querys============*/
+
+
+@media screen and (max-width: 480px){
+
+  .nav__container .checkbtn{
+    display: block;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #021142;
+    opacity: .8;
+    top: 70px;
+    left:-10px;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  .nav__container .nav ul{
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 50px;
+  }
+
+  input[type="checkbox"]:checked ~ ul{
+    left: -110%;
+  }
+
+  .container__carrusel{
+    width: 100%;
+    height: 200px;
+  }
+
+  .container__carrusel img{
+    width: 100%;
+    height: 200px;
+  }
+
+  .main__kdrops{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2;
+    margin-bottom: 300px;
+  }
+
+  .main__kdrops .pro__description h3{
+    font-size: 12px;
+  }
+
+  .main__kdrops .pro__description p{
+    font-size: 6px;
+  }
+
+  .main__kdrops .pro__description button{
+    width: 80px;
+    font-size: 12px;
+  }
+
+  .container_product .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+  .container_product .input h2{
+    font-size: 20px; 
+  }
+    
+  .container_product .input label{
+    font-size: 25px; 
+  }
+
+  .container_product h1{
+    font-size: 20px; 
+  }
+
+  .rotating-text-wrapper {
+    height: 5vh;
+  }
+
+  .rotating-text-wrapper h2 {
+    font-size: .5em;
+  }
+
+  .productos_mas_descripcion .foto_producto{
+    width: 550px;
+    height: 500px;
+  }
+
+  .especificaciones .espe{
+    width: 500px;
+    height: 500px;
+  }
+
+  .title_test_nos .titles h1{
+    font-size: 16px;
+  }
+
+  .container_carrusel_about{
+    display: block;
+  }
+
+  .contactanos h2{
+    font-size: 24px;
+    color: #2596be;
+  }
+
+  .contactanos label{
+    color: #2596be;
+  }
+
+  footer{
+    height: 80px;
+  }
+
+  footer div{
+    flex-direction: column;
+  }
+
+  footer div h6{
+    font-size: 14px;
+  }
+
+  footer div a{
+    font-size: 20px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 320px){
+
+  .nav__container .checkbtn{
+    display: block;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #021142;
+    opacity: .8;
+    top: 70px;
+    left:-10px;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  .nav__container .nav ul{
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 50px;
+  }
+
+  input[type="checkbox"]:checked ~ ul{
+    left: -110%;
+  }
+
+
+  .container__carrusel{
+    width: 100%;
+    height: 200px;
+  }
+
+  .container__carrusel img{
+    width: 100%;
+    height: 200px;
+  }
+
+  .main__kdrops{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    margin-bottom: 500px;
+  }
+
+  .container_product .input h2{
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .container_product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container_product .input label{
+    font-size: 25px; 
+  }
+
+  .container_product h1{
+    font-size: 17px; 
+  }
+
+  .productos_mas_descripcion .foto_producto{
+    width: 450px;
+    height: 400px;
+  }
+
+  .especificaciones .espe{
+    width: 400px;
+    height: 400px;
+  }
+
+  .productos_mas_descripcion .descipcion_producto {
+    margin-bottom: 300px;
+  }
+
+  .productos_mas_descripcion .descipcion_producto h1{
+    font-size: 24px;
+  }
+  
+
+  .especificaciones .espe{
+    height: 700px;
+  }
+
+  .especificaciones .espe h5{
+    font-size: 20px;
+  }
+  
+  .especificaciones .espe p{
+    font-size: 14px;
+  }
+
+  .preguntas_frecuentes .title_preguntas h1{
+    font-size: 20px;
+  }
+
+  .preguntas_frecuentes .accordion .accordion-item .accordion-header button{
+    font-size: 16px;
+  }
+  
+  .preguntas_frecuentes .accordion .accordion-item .accordion-collapse .accordion-body{
+    font-size: 14px;
+  }
+
+
+  .contactanos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+  }
+
+
+  .quienes_somos_cont .content h3{
+    font-size: 22px;
+  }
+
+  .quienes_somos_cont .content p{
+    font-size: 14px;
+  }
+}
